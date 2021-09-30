@@ -9,3 +9,4 @@ print("How much do you weight (in kilograms)?")
 weight = int(input())
 bmi = weight/height**2
 print(f"{name} you are {age} years old and your BMI is {bmi:.2f}")
+
