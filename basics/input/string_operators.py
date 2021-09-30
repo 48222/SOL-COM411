@@ -1,7 +1,13 @@
 # Energy, Shield and Lives for the robot
 print("Please enter the number of lives")
-str(input())
+lives = str(input())
 print("Please enter the energy level")
-str(input())
+energy = str(input())
 print("Please enter the shield level")
-str(input())
+shield = str(input())
+level = str(input())
+print("Health has been set.")
+print(f"Lives: {lives}")
+print(f"Energy: {energy}")
+print(f"Shield: {shield}")
+
