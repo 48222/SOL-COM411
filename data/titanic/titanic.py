@@ -30,6 +30,19 @@ def display_menu():
     return options
 
 
+def display_passenger_names():
+    print("The names of the passengers are:")
+    for record in records:
+        passenger_name = record[3]
+        print(passenger_name)
+
+
+
+
+
+
+
+
 def run():
     load_data("titanic.csv")
     num_records = len(records)
@@ -37,6 +50,11 @@ def run():
 
     selected_option = display_menu()
     print(f"You have selected the option: {selected_option}")
+
+    if selected_option == 1:
+        display_passenger_names()
+    else:
+        print("Error! Option not recognised!")
 
 
 if __name__ == "__main__":
