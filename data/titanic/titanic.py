@@ -34,7 +34,7 @@ def display_passenger_names():
     print("The names of the passengers are:")
     for record in records:
         passenger_name = record[3]
-    print(passenger_name)
+        print(passenger_name)
 
 
 def display_num_survivors():
