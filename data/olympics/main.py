@@ -10,7 +10,7 @@ def read_data(file_path):
         csv_reader = csv.reader(csv_file)
         next(csv_reader)
         for line in csv_reader:
-            data_append(line)
+            data.append(line)
     tui.completed()
     return data
 
@@ -25,7 +25,7 @@ def run():
         elif selection == "tally":
             process.tally_medals(athlete_data)
         elif selection == "team":
-            process.tally_team_meadals(athlete_data)
+            process.tally_team_medals(athlete_data)
         elif selection == "exit":
             break
         else:
